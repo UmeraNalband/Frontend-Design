@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winkel </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="winkel.js">
+
+  <link rel="stylesheet" href="wink.css">
+  <link rel="stylesheet" href="winks.css">
+  <link rel="stylesheet" href="winked.css">
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+
+    .whatsapp-content {
+      display: flex;
+      align-items: center;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-content img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .whatsapp-content span {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .whatsapp-content:hover {
+      background-color: #1ebc59;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="https://wa.me/919960007767?text=Hello%2C%20I'm%20interested%20in%20your%20preschool.%20Please%20share%20more%20details."
+    class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <div class="whatsapp-content">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+      <span>Chat with us</span>
+    </div>
+  </a>
+  <!-- Main Header -->
+  <div class="main-header fixed-top">
+
+    <!-- Top Bar -->
+    <div class="top-bar text-center text-md-start py-2">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="d-flex gap-3 align-items-center mb-2 mb-md-0">
+          <a href="https://www.facebook.com/share/14LfC5SVuLS/?mibextid=wwXIfr" target="_blank" class="text-white"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/winkeltwinkel_preschool?igsh=MTdjajA0czkxOTQxbg%3D%3D&utm_source=qr"
+            target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+          <span class="ms-3 monday">Mon to Sat: 8.00 am - 7.00 pm</span>
+        </div>
+        <div class="d-none d-md-flex align-items-center office">
+          <i class="fas fa-envelope me-2"></i>
+          wtwpuneoffice@gmail.com
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar-main">
+      <nav class="navbar navbar-expand-xl navbar-light bg-white shadow-sm">
+        <div class="container">
+
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="photos/Logo1.png" alt="Logo" style="height: 50px;">
+          </a>
+
+          <!-- Toggle Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="About us.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="Curriculum.html">Curriculum</a></li>
+
+              <!-- Programs Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Programs</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="day-Care.html">Winky Twinky Day-Care</a></li>
+                  <li><a class="dropdown-item" href="playgroup.html">Winky Twinky Playgroup</a></li>
+                  <li><a class="dropdown-item" href="nursery.html">Winky Twinky Nursery</a></li>
+                  <li><a class="dropdown-item" href="junior.html">Winky Twinky Junior</a></li>
+                  <li><a class="dropdown-item" href="senior.html">Winky Twinky Senior</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+              <!-- Media Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Media</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Contact & Login -->
+            <div class="d-flex align-items-center flex-column flex-lg-row gap-3 ">
+              <div class="d-flex align-items-center">
+                <div class="me-2">
+                  <img src="photos/call.png" alt="" class="img-fluid">
+                </div>
+                <div>
+                  <div class="mobile">+91 9960007767</div>
+                  <small class="question">Call to Questions</small>
+                </div>
+              </div>
+              <button class="button px-3" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                Parent Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header border-0">
+          <h5>Parent Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Parent Name -->
+            <div class="mb-3">
+              <label for="parentName" class="form-label">Parent Name</label>
+              <input type="text" class="form-control" id="parentName" placeholder="Enter your name">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-4">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password">
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between pt-2">
+              <button class="btn-cancle w-50 me-2" data-bs-toggle="modal" data-bs-target="#rejectedReasonModal"
+                data-product="Areca Nut Husk">Cancel</button>
+              <button class="btn-login w-50"> <a href="camera access.html">Login</a></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleSlidesOnly" class="carousel-slide slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="photos/banner1.png" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="photos/banner2.png" class="d-block w-100 img-fluid" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <section class="right-container pt-5 pb-5">
+    <div class="container text-center pb-4">
+      <h3 style="color: #4C3F99;">Our Programs</h3>
+      <h2 class="meet" style="color: #0B2038;">We meet kids at their level regardless of their age</h2>
+    </div>
+
+    <div class="container pb-5 pt-3">
+      <div class="row g-4 ">
+
+        <div class="col-12 col-sm-6 col-md-6  col-lg-4 col-xl">
+          <div class="program-card text-center">
+            <a href="day-Care.html"> <img src="photos/Day Care.png" alt="Day Care" class="img-fluid "></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6  col-lg-4 col-xl">
+          <div class="program-card text-center">
+            <a href="playgroup.html"> <img src="photos/Play Group.png" alt="Playgroup" class="img-fluid "></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6  col-lg-4 col-xl">
+          <div class="program-card text-center">
+            <a href="nursery.html"> <img src="photos/Nursery.png" alt="Nursery" class="img-fluid "></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6  col-lg-4 col-xl pro-card">
+          <div class="program-card text-center ">
+            <a href="junior.html"> <img src="photos/Jr. KG.png" alt="Junior KG" class="img-fluid "></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6  col-lg-4 col-xl">
+          <div class="program-card text-center">
+            <a href="senior.html"><img src="photos/Sr. KG.png" alt="Senior KG" class="img-fluid "></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="preschool-section p-5">
+    <div class="container preschool">
+      <div class="row align-items-center text-center text-md-start ">
+
+        <!-- Left Button -->
+        <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start">
+          <button class="btn Franchise"> <a href="contact.html">Franchise Inquiry </a></button>
+        </div>
+
+        <!-- Center Text -->
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <p class="mb-0 preschool-text ">
+            Engage with fastest emerging Pre-school in India
+          </p>
+        </div>
+
+        <!-- Right Button -->
+        <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end">
+          <button class="btn Admission"><a href="admission.html"> Admission Open
+            </a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="container-fluid about-section pt-5 ">
+    <div class="container pb-4 pt-4">
+      <div class="row g-5 align-items-center flex-lg-row flex-column">
+
+        <!-- Left Container (Image) -->
+        <div class="col-12 col-lg-5  mb-lg-0 left-section pb-4">
+          <div class="img-box text-center text-lg-start">
+            <img src="photos/aboutimg.png" alt="Teachers with children" class="img-fluid about">
+          </div>
+        </div>
+
+        <!-- Right Container (Text and Button) -->
+        <div class="col-12 col-lg-7 text-center text-lg-start right-container">
+          <h3>About Us</h3>
+          <h2 class="h2">Immerse Yourself in a PreSchool of Real-World Experiences</h2>
+          <p>
+            WINKEL TWINKEL International Preschool in Pune offers a nurturing environment with a mix of play-based
+            learning and hands-on activities. Children engage in creative play, outdoor fun, and interactive sessions
+            that build social, cognitive, and physical skills. The preschool focuses on fostering curiosity and
+            confidence in a fun, safe setting.
+          </p>
+          <a href="About us.html"> <button>Learn More</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Image -->
+    <img src="photos/2bg.png" alt="Decorative background" class="img-fluid bg w-100">
+  </section>
+
+
+  <!-- Counter Section -->
+ 
+  <!-- Counter Section -->
+  <div class="container pb-5 counter-section">
+    <div class="row text-center g-4">
+      <!-- 1 -->
+      <div class="col-6 col-md-6 col-lg">
+        <div class="counter-box bg-grn">
+          <span class="counter" data-target="13">0</span><span class="plus-sign">+</span>
+          <div class="label">Years</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-6 col-md-6 col-lg">
+        <div class="counter-box bg-prple">
+          <span class="counter" data-target="4748">0</span><span class="plus-sign">+</span>
+          <div class="label">Days</div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-6 col-md-6 col-lg">
+        <div class="counter-box bg-prmary">
+          <span class="counter" data-target="116940">0</span><span class="plus-sign">+</span>
+          <div class="label">Hours</div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-6 col-md-6 col-lg">
+        <div class="counter-box bg-pnk">
+          <span class="counter" data-target="1500">0</span><span class="plus-sign">+</span>
+          <div class="label">Nurtured Students</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="photos/BG8.png" class="img-fluid" width="100%" alt="">
+
+
+  <section class="admission-section main-Admission pt-1">
+    <div class="container text-center  right-container pb-5">
+      <h3 style="color: #000000;">Admission</h3>
+      <h2 style="color: #005CA9;">Admission Process Overview</h2>
+      <p class="mb-5 preschool" style="color: #353535;">
+        Winkel Twinkel Preschool welcomes new families with an easy admission process. Start by submitting an inquiry
+        through our website or phone to learn about our programs. Next, meet with our Head of Preschool to discuss your
+        child’s needs and ask questions. Afterward, collect the admission form, which can be obtained in person or via
+        email. Once completed, pay the registration fee to secure your child's spot. Finally, we’ll confirm admission
+        and send a welcome packet with essential details about orientation and what to expect. We’re excited to have
+        your child join the Winkel Twinkel family!
+      </p>
+
+      <div class="row align-items-center justify-content-center">
+
+        <!-- Step 1 -->
+        <div class="col-12 col-lg-auto">
+          <div class="step-box text-center">
+            <img src="photos/add1.png" alt="Submit Inquiry" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-auto text-center">
+          <img src="photos/Arrow 1.png" class="arrow img-fluid" alt="arrow">
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-12 col-lg-auto">
+          <div class="step-box text-center">
+            <img src="photos/add2.png" alt="Meet Head" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-auto text-center">
+          <img src="photos/Arrow 2.png" class="arrow img-fluid" alt="arrow">
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-12 col-lg-auto">
+          <div class="step-box text-center">
+            <img src="photos/add3.png" alt="Collect Form" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-auto text-center">
+          <img src="photos/Arrow 3.png" class="arrow img-fluid" alt="arrow">
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-12 col-lg-auto">
+          <div class="step-box text-center">
+            <img src="photos/add4.png" alt="Pay Fee" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-auto text-center">
+          <img src="photos/Arrow 4.png" class="arrow img-fluid" alt="arrow">
+        </div>
+
+        <!-- Step 5 -->
+        <div class="col-12 col-lg-auto">
+          <div class="step-box text-center">
+            <img src="photos/add5.png" alt="Confirm Admission" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+
+      <a href="admission.html"> <button>Get Admission</button></a>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <div class="container curriculum pt-5">
+    <div class="row align-items-center main-container pb-5">
+
+      <!-- Left Container (Image) -->
+      <div class="col-12 col-lg-5  mb-lg-0 left-section">
+        <div class="img-box text-center">
+          <img src="photos/bgimg.png" alt="Teachers with children" class="img-fluid">
+        </div>
+      </div>
+
+      <!-- Right Container (Text and Button) -->
+      <div class="col-12 col-lg-7 text-center text-lg-start right-container">
+        <h3 style="color: black;">Curriculum</h3>
+        <h2 style="color: black;" class="h2">Our Curriculum</h2>
+        <p style="color: black;">
+          Our curriculum nurtures children's curiosity and creativity, tailored to their individual learning styles.
+          Inspired by Montessori, Reggio Emilia, and Howard Gardner’s theory of multiple intelligences, we create a
+          hands-on, play-based environment. Children engage in self-directed learning, exploring and expressing
+          themselves freely, while our educators guide them through personalized, age-appropriate activities that blend
+          digital tools with natural experiences. Aligned with Early Years Foundation Stage (EYFS) standards, our
+          program supports development through play, encompassing sensorial exploration, early literacy, numerical
+          concepts, and creative arts. We foster a nurturing environment that empowers children to take charge of their
+          learning journey, building lifelong confidence and a love for learning.
+        </p>
+        <a href="Curriculum.html"> <button>More info</button></a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <section class="testimonial-section pt-5">
+    <div class="container  text-center ">
+      <h3 class="top-first">Our Testimonials</h3>
+      <h2 class="top-sec">Words from Our Wonderful Families</h2>
+
+      <div class="p-3 p-md-5">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+              <div class="testimonial-card mx-auto p-4">
+                <p>
+                  I observed some good behavior and learning skills in my daughter after being admitted in Winkel
+                  Twinkel Pre School. Ms. Ashwini has a good teaching experience and knows how to handle kids. In a
+                  short note Winkel Twinkel Pre School doing a good job. </p>
+                <h6 class="name">Yogesh Walhe, <span class="father">Father of</span></h6>
+                <h6>Nurvi Walhe</h6>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="testimonial-card mx-auto p-4">
+                <p>
+                  Its one of the best School and classes for our little ones. The efforts
+                  and dedication you have put towards your students is truly appreciable. Since the time, my child has
+                  joined your class, I see remarkable improvement in her writing.. She did not used to not write
+                  properly before however, I see huge improvement after she has joined your classes and learning from
+                  you. Just remain the way you are! Passionate, kind and patient. So parents, do not hesitate to reach
+                  out to Ms. Ashwini. Go for the best growth of your child....@Ashwini Thanks for always responding and
+                  supporting as well.
+                </p>
+                <h6 class="name">Swati Rathod, <span class="father">Mother of</span></h6>
+                <h6>Yokshita Rathod</h6>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+              <div class="testimonial-card mx-auto p-4">
+                <p>
+                  I am thrilled with my daughter's experience at Winkel Twinkel Pre School. The teachers are dedicated
+                  and truly care about each student's success, fostering a love for learning. The supportive and
+                  inclusive environment has helped her build confidence and friendships. I appreciate the wide range of
+                  extracurricular activities that encourage her growth outside the classroom. Overall, Winkel Twinkel
+                  Pre School has exceeded our expectations, and I highly recommend it to other parents!
+                </p>
+                <h6 class="name">Shubham Koratkar, <span class="father">Father of</span></h6>
+                <h6>Rudvi Koratkar</h6>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background image -->
+    <img src="photos/cardbg.png" alt="" class="img-fluid w-100 ">
+  </section>
+
+
+  <section class="blog-section main pt-1">
+    <div class="container right-container ">
+      <h3 class="text-center">Media</h3>
+      <h2 class="text-center"> Blogs </h2>
+
+      <div class="row g-4 pt-4 pb-5">
+        <!-- Blog Card 1 -->
+        <div class="col-12 col-sm-6 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <div class="card ">
+            <div class="position-relative">
+              <img src="photos/blog1.jpg" class="card-img-top  img-fluid" alt="...">
+              <div class=" date-badge ">
+                <small>28<br>Feb</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-center principle ">
+                <img src="photos/user 1.svg" alt="" width="16"> By Principle
+                <img src="photos/Frame.svg" alt="" width="16"> Annual Function
+              </div>
+              <h5 class="card-title">School Events & Programs</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="col-12 col-sm-6 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <div class="card">
+            <div class="position-relative">
+              <img src="photos/blog2.jpg" class="card-img-top rounded-4 img-fluid" alt="...">
+              <div class="date-badge ">
+                <small>28<br>Feb</small>
+              </div>
+            </div>
+            <div class="card-body ">
+              <div class="d-flex align-items-center principle ">
+                <img src="photos/user 1.svg" alt="" width="16"> By Principle
+                <img src="photos/Frame.svg" alt="" class="activity" width="16"> Activity
+              </div>
+              <h5 class="card-title ">Preschool Activities & Crafts</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="col-12 col-sm-6 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <div class="card">
+            <div class="position-relative">
+              <img src="photos/blog3.jpg" class="card-img-top rounded-4 img-fluid" alt="...">
+              <div class="date-badge ">
+                <small>28<br>Feb</small>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-center principle">
+                <img src="photos/user 1.svg" alt="" width="16"> By Principle
+                <img src="photos/Frame.svg" alt="" width="16"> Tips
+              </div>
+              <h5 class="card-titles">Early Childhood Education Tips</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="photos/cardbg2.png" alt="" class="img-fluid w-100 bg">
+  </section>
+
+  <footer class="footer pt-4">
+    <div class="container right-container">
+      <div class="row gy-4">
+
+        <!-- Left: Logo & Address -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="logo mb-3">
+            <img src="photos/Logo1.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+          </div>
+          <div class="contact small">
+            <p>
+              <img src="photos/Location.png" alt="Location" class="me-2" width="16">
+              Winkel Twinkel <br>
+              Unit No 1, Behind Tanish Park,<br>
+              Near Puneri Mart, Charholi Bk. Pune 412105
+            </p>
+            <p>
+              <img src="photos/Telephone.svg" alt="Phone" class="me-2" width="16">
+              9960007767
+            </p>
+            <p>
+              <img src="photos/Email.svg" alt="Email" class="me-2" width="16">
+              wtwpuneoffice@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <!-- Middle: Links -->
+        <div class="col-6 col-md-6 col-lg col-lg-2">
+          <h5 class="mb-3">Links</h5>
+          <ul class="list-unstyled small">
+            <li><a href="About us.html" class="text-decoration-none">About Us</a></li>
+            <li><a href="Curriculum.html" class="text-decoration-none">Curriculum</a></li>
+            <li><a href="day-Care.html" class="text-decoration-none">Programs</a></li>
+            <li><a href="admission.html" class="text-decoration-none">Admission</a></li>
+            <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Explore -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5 class="mb-3">Explore</h5>
+          <ul class="list-unstyled small">
+            <li><a href="contact.html" class="text-decoration-none">Contact</a></li>
+            <li><a href="Gallery.html" class="text-decoration-none">Gallery</a></li>
+            <li><a href="#" class="text-decoration-none">Help</a></li>
+          </ul>
+
+          <!-- Social Media -->
+          <div class="social-icons mt-4 d-flex gap-3">
+            <a href="https://www.facebook.com/share/14LfC5SVuLS/?mibextid=wwXIfr" target="_blank">
+              <img src="photos/facebook.png" alt="Facebook" width="24">
+            </a>
+            <a href="https://www.instagram.com/winkeltwinkel_preschool?igsh=MTdjajA0czkxOTQxbg%3D%3D&utm_source=qr"
+              target="_blank">
+              <img src="photos/linkedin.png" alt="LinkedIn" width="24">
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Gallery -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <h5 class="mb-3">Gallery</h5>
+          <div class="row g-2">
+            <div class="col-4"><a href="Gallery.html"><img src="photos/gallery1.png" class="img-fluid rounded"
+                  alt=""></a></div>
+            <div class="col-4"><a href="Gallery.html"><img src="photos/gallery2.png" class="img-fluid rounded"
+                  alt=""></a></div>
+            <div class="col-4"><a href="Gallery.html"><img src="photos/gallery3.png" class="img-fluid rounded"
+                  alt=""></a></div>
+            <div class="col-4"><a href="Gallery.html"><img src="photos/gallery4.png" class="img-fluid rounded"
+                  alt=""></a></div>
+            <div class="col-4"><a href="Gallery.html"><img src="photos/gallery5.png" class="img-fluid rounded"
+                  alt=""></a></div>
+            <div class="col-4"><a href="Gallery.html"><img src="photos/gallery6.png" class="img-fluid rounded"
+                  alt=""></a></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom text-center mt-4 border-top pt-3 small">
+        &copy; 2024 Winkel Twinkel Pune. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const myCarousel = document.querySelector('#carouselExampleAutoplaying');
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 3000,
+      pause: 'hover' // 👉 hover par stop karega aur mouse nikalte hi fir start
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+      counter.innerText = '0';
+
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        const increment = target / 200; // speed factor
+
+        if (count < target) {
+          counter.innerText = `${Math.ceil(count + increment)}`;
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = target + '+';
+        }
+      };
+
+      updateCounter();
+    });
+  </script>
+
+  <script>
+    // Counter animation
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".counter");
+      const speed = 200; // lower = faster
+
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const increment = target / speed;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target.toLocaleString() + "+";
+          }
+        };
+        updateCount();
+      });
+    });
+  </script>
+  
+  
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const counters = document.querySelectorAll('.counter');
+  const TOTAL_DURATION = 2000; // 2 seconds for all counters
+
+  const animate = (el) => {
+    const target = parseInt(el.getAttribute('data-target'), 10);
+    const increment = target / (TOTAL_DURATION / 16); // assuming ~60fps (16ms per frame)
+    let count = 0;
+
+    const update = () => {
+      count += increment;
+      if (count < target) {
+        el.innerText = Math.ceil(count);
+        requestAnimationFrame(update);
+      } else {
+        el.innerText = target;
+      }
+    };
+    requestAnimationFrame(update);
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animate(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(c => observer.observe(c));
+});
+</script>
+
+  <script>
+    // ✅ Indian number formatter
+    function formatIndianNumber(x) {
+      x = x.toString();
+      let lastThree = x.substring(x.length - 3);
+      let otherNumbers = x.substring(0, x.length - 3);
+      if (otherNumbers !== '') lastThree = ',' + lastThree;
+      return otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+    }
+
+    const section = document.querySelector(".counter-section");
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll(".counter-box").forEach(box => box.classList.add("show"));
+
+          const counters = document.querySelectorAll(".counter");
+          const targets = Array.from(counters).map(c => parseInt(c.getAttribute("data-target")));
+          const maxTarget = Math.max(...targets);
+
+          let steps = 100;  
+          let duration = 2000; // 2s total
+          let currentStep = 0;
+
+          let interval = setInterval(() => {
+            currentStep++;
+            let progress = currentStep / steps;
+
+            counters.forEach((counter, i) => {
+              let value = Math.floor(targets[i] * progress);
+              if (progress >= 1) value = targets[i];
+              counter.innerHTML = formatIndianNumber(value);
+            });
+
+            if (progress >= 1) clearInterval(interval);
+          }, duration / steps);
+
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(section);
+  </script>
+
+
+</body>
+
+</html>
+
+
